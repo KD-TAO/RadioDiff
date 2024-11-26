@@ -1,19 +1,17 @@
 # RadioDiff: An Effective Generative Diffusion Model for Sampling-Free Dynamic Radio Map Construction
 
-This is the code for the paper "RadioDiff: An Effective Generative Diffusion Model for Sampling-Free Dynamic Radio Map Construction" submitted to IEEE TCCN.
+This is the code for the paper "RadioDiff: An Effective Generative Diffusion Model for Sampling-Free Dynamic Radio Map Construction", IEEE TCCN.
+
+[Paper](https://ieeexplore.ieee.org/document/10764739)
 
 #### 🔥🔥🔥 News
 
-- **2024-7-2:** This repo is released.
+- **2024-7:** This repo is released.
+- **2024-11:** Our paper has been accepted by IEEE TCCN.
 
 ---
 
 > **Abstract:** Radio map (RM) is a promising technology that can obtain pathloss based on only location, which is significant for 6G network applications to reduce the communication costs for pathloss estimation. However, the construction of RM in traditional is either computationally intensive or depends on costly sampling-based pathloss measurements. Although the neural network (NN)-based method can efficiently construct the RM without sampling, its performance is still suboptimal. This is primarily due to the misalignment between the generative characteristics of the RM construction problem and the discrimination modeling exploited by existing NN-based methods. Thus, to enhance RM construction performance, in this paper, the sampling-free RM construction is modeled as a conditional generative problem, where a denoised diffusion-based method, named RadioDiff, is proposed to achieve high-quality RM construction. In addition, to enhance the diffusion model's capability of extracting features from dynamic environments, an attention U-Net with an adaptive fast Fourier transform module is employed as the backbone network to improve the dynamic environmental features extracting capability. Meanwhile, the decoupled diffusion model is utilized to further enhance the construction performance of RMs. Moreover, a comprehensive theoretical analysis of why the RM construction is a generative problem is provided for the first time, from both perspectives of data features and NN training methods. Experimental results show that the proposed RadioDiff achieves state-of-the-art performance in all three metrics of accuracy, structural similarity, and peak signal-to-noise ratio.
-
-## ⚒️ TODO
-
-* [ ] Release Paper
-* [ ] Release code and pretrained models
 
 ## :sunny: Before Starting
 
@@ -74,5 +72,12 @@ If you have some questions, please contact with KD.TAO@outlook.com.
 Thanks to the base code [DDM-Public](https://github.com/GuHuangAI/DDM-Public).
 ## Citation
 ~~~
-coming soon
+@ARTICLE{radiodiff,
+  author={Wang, Xiucheng and Tao, Keda and Cheng, Nan and Yin, Zhisheng and Li, Zan and Zhang, Yuan and Shen, Xuemin},
+  journal={IEEE Transactions on Cognitive Communications and Networking}, 
+  title={RadioDiff: An Effective Generative Diffusion Model for Sampling-Free Dynamic Radio Map Construction}, 
+  year={2024},
+  pages={1-1},
+  keywords={Artificial neural networks;Training;Feature extraction;Diffusion models;Electromagnetics;Vehicle dynamics;Finite element analysis;Buildings;Noise;Costs;radio map;denoise diffusion model;generative problem;wireless network},
+  doi={10.1109/TCCN.2024.3504489}}
 ~~~
